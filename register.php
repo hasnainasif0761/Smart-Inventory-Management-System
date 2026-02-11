@@ -10,7 +10,7 @@
     <div class="relative w-[900px] h-[500px]  rounded-2xl shadow-2xl overflow-hidden">
         <div id="slider" class="flex w-[200%] h-full  transition-transform duration-700">
             <div class="w-1/2 flex">
-            
+
             <!-- Registration form -->
                 <div class="w-1/2 flex items-center justify-center bg-red-100">
                     <div class="w-3/4">
