@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / SignUp Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="w-[900px] h-[500px]  border border-2 shadow-xl rounded-xl overflow-hidden">
+        <div id="slide" class="w-[200%] h-full flex transition duration-700">
+        <!-- Registration Form -->
+         <div class="w-full flex">
+        <div class="w-1/2 h-full border border-2 px-2 flex justify-center items-center bg-red-100">
+            <div class="w-full   py-10 px-5">
+                <h2 class="text-3xl font-bold mb-5 text-center">Register Form</h2>
+                <form>
+                    <label>Name :</label>
+                    <input type="text" placeholder="Enter your Name" class="w-full border mb-2  py-2 px-3 focus:outline-none">
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter your Email" class="w-full border mb-2  py-2 px-3 focus:outline-none">
+                    <label>Password :</label>
+                    <input type="password" placeholder="Enter your Password" class="w-full border mb-2  py-2 px-3 focus:outline-none">
+                    <button class="w-full border py-3 px-3 mt-3 mb-10 bg-blue-400 rounded-lg text-white">Register Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="w-1/2 ">
+            <div class="w-full h-full bg-blue-400 flex justify-center items-center flex-col">
+                <h2 class="text-3xl font-bold text-white">Welcome Back!</h2>
+                <p class="text-sm font-semibold text-white mt-2">Already have an account ?</p>
+                <button onclick="toggle()" class="border border-white px-6 py-2 mt-3 rounded-lg hover:bg-white hover:text-blue-400 transition">
+                    Login
+                </button>  
+            </div>
+        </div>
+        </div>
+
+        <div class="w-full flex">
+        <!-- Info Panel -->
+        <div class="w-1/2  border-blue-300">
+            <div class="w-full h-full bg-blue-400 flex justify-center items-center flex-col">
+                  <h2 class="text-3xl font-bold text-white">Welcome Friends!</h2>
+                  <p class="text-sm font-semibold text-white mt-2">Don't have account please Register ?</p>
+                  <button onclick="toggle()" class="border border-white px-6 py-2 mt-3 rounded-lg hover:bg-white hover:text-blue-400 transition">
+                    Register Now
+                  </button>  
+            </div>
+        </div>
+
+        <!-- Login Form -->
+         <div class="w-1/2 h-full border border-2 px-2 flex justify-center items-center bg-red-100">
+            <div class="w-full   py-10 px-5">
+                <h2 class="text-3xl font-bold mb-5 text-center">Login Form</h2>
+                <form>
+                    <label>Email :</label>
+                    <input type="email" placeholder="Enter your Email" class="w-full border mb-2  py-2 px-3 focus:outline-none">
+                    <label>Password :</label>
+                    <input type="password" placeholder="Enter your Password" class="w-full border mb-2  py-2 px-3 focus:outline-none">
+                    <button class="w-full border py-3 px-3 mt-3 mb-10 bg-blue-400 rounded-lg text-white">Login Now</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        let active = false;
+        function toggle(){
+            let slide = document.getElementById('slide');
+            slide.style.transform = active ? 'translateX(0%)' : 'translateX(-50%)';
+            active = !active
+        }
+    </script>
+</body>
+</html>
