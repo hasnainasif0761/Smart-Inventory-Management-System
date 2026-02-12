@@ -9,7 +9,9 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="relative w-[900px] h-[500px]  rounded-2xl shadow-2xl overflow-hidden">
         <div id="slider" class="flex w-[200%] h-full  transition-transform duration-700">
-            <div class="w-1/2 flex">
+           
+        <!-- Regiter Side -->
+        <div class="w-1/2 flex">
 
             <!-- Registration form -->
                 <div class="w-1/2 flex items-center justify-center bg-red-100">
@@ -36,7 +38,7 @@
                        Go back Login form
                     </button>
                 </div>
-            </div>
+        </div>
 
             <!-- Login Side  -->
              <div class="w-1/2 flex">
